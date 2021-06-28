@@ -175,7 +175,7 @@ loadUser = (data) => {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-    fetch ('http://localhost:3001/imageurl', {
+    fetch ('https://mighty-castle-82522.herokuapp.com/imageurl', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -185,7 +185,7 @@ loadUser = (data) => {
     .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch ('http://localhost:3001/image', {
+          fetch ('https://mighty-castle-82522.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

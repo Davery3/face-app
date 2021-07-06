@@ -18,6 +18,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "kill": "npx kill-port 3000",
+    "host": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
